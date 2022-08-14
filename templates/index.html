@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AskQuestionForm</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename = 'styles/style.css')}}">
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    </head>
+    <body>
+        <div name = "idd">
+            <input  type="number" id="idd" placeholder="Enter Your idd " required><br><br>
+        </div>
+        <div name = "name">
+            <input type="text" id="name" placeholder="Enter Your name " required><br><br>
+        </div>
+        <div name = "age">
+            <input type="number" id="age" placeholder="Enter Your age " required><br><br>
+        </div>
+        <div name = "question">
+            <input type="text"  id="question" placeholder="Enter Your question " required><br><br>
+        </div>
+        <div name = "extranotes">
+            <input type="text"  id="extranotes" placeholder="Enter Your extranotes " required><br><br>
+        </div>
+        <div name="savechanges">
+            <button type="submit" id="save" onclick="myfunction()">Save</button>
+        </div>
+        <script type="text/javascript"  src="{{url_for('static' , filename='script.js')}}"></script>
+        
+    </body>
+</html>
